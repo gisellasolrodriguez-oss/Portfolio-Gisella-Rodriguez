@@ -1,0 +1,15 @@
+{
+  "name": "gisella-rodriguez-portfolio",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Portfolio personal estático de Gisella Soledad Rodriguez",
+  "scripts": {
+    "build": "npm run build:css",
+    "build:css": "tailwindcss -i ./src/input.css -o ./styles.css --minify"
+  },
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.3.5",
+    "basecoat-css": "^1.1.0",
+    "tailwindcss": "^4.3.5"
+  }
+}

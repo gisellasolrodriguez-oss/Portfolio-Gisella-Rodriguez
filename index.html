@@ -1,0 +1,306 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f4eb">
+  <meta name="description" content="Portfolio de Gisella Soledad Rodriguez: diseño UX/UI, desarrollo web y proyectos digitales con foco en claridad y accesibilidad.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Gisella Soledad Rodriguez — Portfolio UX/UI">
+  <meta property="og:description" content="Diseño experiencias digitales claras, accesibles y cuidadas en cada detalle.">
+  <meta property="og:image" content="./assets/gisella-rodriguez.jpg">
+  <title>Gisella Soledad Rodriguez — Portfolio UX/UI</title>
+  <script>
+    try {
+      const savedTheme = localStorage.getItem("portfolio-theme");
+      document.documentElement.dataset.theme = savedTheme === "light" || savedTheme === "dark"
+        ? savedTheme
+        : (matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+      document.querySelector('meta[name="theme-color"]').content =
+        document.documentElement.dataset.theme === "dark" ? "#272417" : "#f7f4eb";
+    } catch (error) {
+      console.error("No se pudo restaurar el tema guardado.", error);
+    }
+  </script>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%231a402f'/%3E%3Ctext x='50%25' y='53%25' dominant-baseline='middle' text-anchor='middle' font-family='sans-serif' font-size='36' font-weight='700' fill='%23f8f5eb'%3EG%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Saltar al contenido</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#inicio" aria-label="Gisella Rodriguez, inicio">
+        <span class="brand-mark" aria-hidden="true">G</span>
+        <span class="brand-name">Gisella Rodriguez</span>
+      </a>
+      <nav class="primary-nav" id="primary-nav" aria-label="Navegación principal">
+        <a href="#projects">Proyectos</a>
+        <a href="#skills">Habilidades</a>
+        <a href="#experience">Trayecto</a>
+        <a href="#about">Sobre mí</a>
+        <a href="https://github.com/gisellasolrodriguez-oss" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+        <a class="nav-contact" href="#contact">Hablemos <span aria-hidden="true">↗</span></a>
+      </nav>
+      <div class="header-controls">
+        <button class="theme-toggle" type="button" aria-label="Activar modo oscuro" aria-pressed="false" title="Cambiar tema">
+          <svg class="theme-icon theme-icon-sun" viewBox="0 0 24 24" aria-hidden="true">
+            <circle cx="12" cy="12" r="4"></circle>
+            <path d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42"></path>
+          </svg>
+          <svg class="theme-icon theme-icon-moon" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M20.2 15.4A8.5 8.5 0 0 1 8.6 3.8 8.5 8.5 0 1 0 20.2 15.4Z"></path>
+          </svg>
+        </button>
+        <button class="menu-toggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="primary-nav">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="container hero" id="inicio" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow">Portfolio · Identidad visual</p>
+        <div class="availability">Disponible para nuevos desafíos</div>
+        <h1 id="hero-title">Diseño experiencias que <em>conectan.</em></h1>
+        <p>Hola, soy <strong>Gisella Rodriguez</strong>. Diseñadora UX/UI y desarrolladora front-end en formación. Transformo problemas complejos en productos digitales simples, humanos y memorables.</p>
+        <div class="hero-actions">
+          <a class="button" href="#projects">Ver proyectos <span aria-hidden="true">↘</span></a>
+          <a class="text-link hero-email" href="mailto:gisellasolrodriguez@gmail.com">gisellasolrodriguez@gmail.com <span aria-hidden="true">↗</span></a>
+        </div>
+        <p class="hero-meta">Ubicada en Argentina · Trabajando en todo el mundo</p>
+      </div>
+      <div class="universe-stage" id="universe" role="group" aria-label="Universo creativo: órbita de tecnologías">
+        <div class="orbit-visual" role="img" aria-label="Diseño UX/UI en el centro, con Figma, HTML, CSS y JavaScript orbitando alrededor.">
+          <span class="orbit-ring orbit-ring-outer" aria-hidden="true"></span>
+          <span class="orbit-ring orbit-ring-middle" aria-hidden="true"></span>
+          <span class="orbit-ring orbit-ring-inner" aria-hidden="true"></span>
+          <span class="orbit-track orbit-track-figma" aria-hidden="true"><span class="orbit-tech-node"><span>Figma</span></span></span>
+          <span class="orbit-track orbit-track-html" aria-hidden="true"><span class="orbit-tech-node"><span>HTML</span></span></span>
+          <span class="orbit-track orbit-track-css" aria-hidden="true"><span class="orbit-tech-node"><span>CSS</span></span></span>
+          <span class="orbit-track orbit-track-js" aria-hidden="true"><span class="orbit-tech-node"><span>JS</span></span></span>
+          <span class="orbit-core" aria-hidden="true"><span>UX</span><small>+ code</small></span>
+        </div>
+        <p class="orbit-caption">Universo creativo · explorar, crear, iterar.</p>
+        <button class="motion-toggle" type="button" aria-pressed="false">Pausar órbita</button>
+      </div>
+    </section>
+
+    <section class="highlights" id="highlights" aria-label="Resumen del portfolio">
+      <div class="container highlight-grid">
+        <div class="highlight"><strong>02</strong><span>sitios web publicados</span></div>
+        <div class="highlight"><strong>03</strong><span>proyectos destacados</span></div>
+        <div class="highlight"><strong>01</strong><span>prototipo UX/UI completado</span></div>
+        <div class="highlight"><strong>∞</strong><span>curiosidad por aprender</span></div>
+      </div>
+    </section>
+
+    <section class="section" id="projects" aria-labelledby="projects-title">
+      <div class="container">
+        <p class="eyebrow">01 · Proyectos</p>
+        <h2 id="projects-title">Ideas que tomaron<br><em>forma.</em></h2>
+        <p class="section-intro">Sitios publicados y un caso de diseño completo. Cada proyecto es una oportunidad para practicar claridad, criterio visual y atención al recorrido.</p>
+        <div class="projects-grid">
+          <article class="project-card">
+            <div class="project-art project-art-insurance" aria-hidden="true">
+              <div class="art-window"><div class="art-bar"><span></span><span></span><span></span></div><div class="art-line art-line-short"></div><div class="art-line"></div><div class="art-line"></div><div class="art-pill"></div></div>
+            </div>
+            <div class="project-body">
+              <div class="project-topline"><h3>Contratación Digital Seguros</h3><span class="project-year">2026</span></div>
+              <p>Una experiencia web para explorar y contratar seguros de forma digital, con foco en hacer más claro el recorrido.</p>
+              <div class="chips"><span class="chip">UX/UI</span><span class="chip">Diseño web</span><span class="chip">Responsive</span></div>
+              <div class="project-links"><a class="text-link" href="https://contrataciondigitalseguros.netlify.app/" target="_blank" rel="noopener noreferrer">Visitar sitio <span aria-hidden="true">↗</span></a></div>
+              <details class="case-study">
+                <summary>Ver caso de estudio</summary>
+                <div class="case-study-content">
+                  <h4>Problema</h4>
+                  <p>Presentar una contratación de seguros en un entorno digital sin perder claridad durante la decisión.</p>
+                  <h4>Proceso</h4>
+                  <p>Organizar la información del servicio y estructurar una interfaz que acompañe el recorrido de consulta y contratación.</p>
+                  <h4>Solución y resultado</h4>
+                  <p>Un sitio web publicado para conocer la propuesta y continuar la contratación en línea.</p>
+                </div>
+              </details>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-art project-art-coffee" aria-hidden="true">
+              <span class="art-star">✳</span>
+              <div class="art-window art-window-dark"><div class="art-bar"><span></span><span></span><span></span></div><div class="art-line art-line-short"></div><div class="art-line"></div><div class="art-line"></div><div class="art-pill"></div></div>
+              <span class="art-coffee-cup">c</span>
+            </div>
+            <div class="project-body">
+              <div class="project-topline"><h3>Coffea</h3><span class="project-year">2026</span></div>
+              <p>Landing page para una marca de café: una presentación cálida que pone el producto y la identidad de marca en primer plano.</p>
+              <div class="chips"><span class="chip">Landing page</span><span class="chip">Identidad visual</span><span class="chip">Responsive</span></div>
+              <div class="project-links"><a class="text-link" href="https://tplandingcoffea.netlify.app/" target="_blank" rel="noopener noreferrer">Visitar sitio <span aria-hidden="true">↗</span></a></div>
+              <details class="case-study">
+                <summary>Ver caso de estudio</summary>
+                <div class="case-study-content">
+                  <h4>Problema</h4>
+                  <p>Dar presencia digital a una marca de café y comunicar su personalidad desde el primer contacto.</p>
+                  <h4>Proceso</h4>
+                  <p>Construir una landing con jerarquía clara, lenguaje visual cálido y contenido orientado al producto.</p>
+                  <h4>Solución y resultado</h4>
+                  <p>Una página de presentación de marca publicada y accesible desde distintos dispositivos.</p>
+                </div>
+              </details>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-art project-art-portfolio" aria-hidden="true">
+              <div class="art-orbit"></div>
+              <div class="art-window"><div class="art-bar"><span></span><span></span><span></span></div><div class="art-line art-line-short"></div><div class="art-line"></div><div class="art-line"></div><div class="art-pill"></div></div>
+            </div>
+            <div class="project-body">
+              <div class="project-topline"><h3>Portfolio personal</h3><span class="project-year">2026</span></div>
+              <p>Diseño UX/UI del portfolio en Figma, realizado antes de su implementación. Incluye vistas de escritorio y mobile y una propuesta visual clara y oscura.</p>
+              <div class="chips"><span class="chip">Figma</span><span class="chip">Prototipo</span><span class="chip">Design system</span></div>
+              <div class="project-links"><a class="text-link" href="https://www.figma.com/design/Uhq3vH2mVkorierqNs5rHm/Sin-t%C3%ADtulo?node-id=39-15546&amp;m=dev" target="_blank" rel="noopener noreferrer">Ver prototipo en Figma <span aria-hidden="true">↗</span></a></div>
+              <details class="case-study">
+                <summary>Ver proceso de diseño</summary>
+                <div class="case-study-content">
+                  <h4>Exploración</h4>
+                  <p>Se trabajaron varias vistas del portfolio y una guía visual con color, tipografía y componentes.</p>
+                  <h4>Diseño</h4>
+                  <p>El prototipo contempla variantes clara y oscura, organización por secciones y adaptación a mobile.</p>
+                  <h4>Estado</h4>
+                  <p>La etapa de diseño en Figma ya está realizada; este sitio la representa en una implementación responsive.</p>
+                  <details class="figma-more">
+                    <summary>Ver los otros frames del diseño</summary>
+                    <div class="figma-links">
+                      <a href="https://www.figma.com/design/Uhq3vH2mVkorierqNs5rHm/Sin-t%C3%ADtulo?node-id=39-15873&amp;m=dev" target="_blank" rel="noopener noreferrer">Frame 39–15873</a>
+                      <a href="https://www.figma.com/design/Uhq3vH2mVkorierqNs5rHm/Sin-t%C3%ADtulo?node-id=42-906&amp;m=dev" target="_blank" rel="noopener noreferrer">Frame 42–906</a>
+                      <a href="https://www.figma.com/design/Uhq3vH2mVkorierqNs5rHm/Sin-t%C3%ADtulo?node-id=38-473&amp;m=dev" target="_blank" rel="noopener noreferrer">Frame 38–473</a>
+                      <a href="https://www.figma.com/design/Uhq3vH2mVkorierqNs5rHm/Sin-t%C3%ADtulo?node-id=38-150&amp;m=dev" target="_blank" rel="noopener noreferrer">Frame 38–150</a>
+                      <a href="https://www.figma.com/design/Uhq3vH2mVkorierqNs5rHm/Sin-t%C3%ADtulo?node-id=38-86&amp;m=dev" target="_blank" rel="noopener noreferrer">Frame 38–86</a>
+                      <a href="https://www.figma.com/design/Uhq3vH2mVkorierqNs5rHm/Sin-t%C3%ADtulo?node-id=38-22&amp;m=dev" target="_blank" rel="noopener noreferrer">Frame 38–22</a>
+                    </div>
+                  </details>
+                </div>
+              </details>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section skills-section" id="skills" aria-labelledby="skills-title">
+      <div class="container">
+        <p class="eyebrow">02 · Habilidades</p>
+        <h2 id="skills-title">Mi caja de<br><em>herramientas.</em></h2>
+        <p class="section-intro">Un proceso que une comprensión de las personas, decisiones visuales y una implementación web cuidada.</p>
+        <div class="skills-grid">
+          <article class="skill-card">
+            <span class="skill-number" aria-hidden="true">01</span>
+            <h3>Experiencia de usuario</h3>
+            <p>Ordeno necesidades, contenido y recorridos para que cada paso se entienda.</p>
+            <div class="chips"><span class="chip">Research</span><span class="chip">Arquitectura</span><span class="chip">Wireframes</span><span class="chip">Prototipos</span></div>
+          </article>
+          <article class="skill-card">
+            <span class="skill-number" aria-hidden="true">02</span>
+            <h3>Diseño de interfaces</h3>
+            <p>Creo sistemas visuales coherentes, legibles y adaptables a distintas pantallas.</p>
+            <div class="chips"><span class="chip">Figma</span><span class="chip">Design systems</span><span class="chip">Responsive</span><span class="chip">Accesibilidad</span></div>
+          </article>
+          <article class="skill-card">
+            <span class="skill-number" aria-hidden="true">03</span>
+            <h3>Desarrollo web</h3>
+            <p>Llevo el diseño al navegador con una base semántica y foco en la experiencia.</p>
+            <div class="chips"><span class="chip">HTML5</span><span class="chip">CSS3</span><span class="chip">JavaScript</span><span class="chip">GitHub</span></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section experience-section" id="experience" aria-labelledby="experience-title">
+      <div class="container">
+        <p class="eyebrow">03 · Trayecto</p>
+        <h2 id="experience-title">Un viaje en<br><em>movimiento.</em></h2>
+        <p class="section-intro">Formación y práctica se encuentran en cada proyecto que desarrollo.</p>
+        <div class="timeline">
+          <article class="timeline-item">
+            <span class="timeline-date">Formación en curso</span>
+            <h3>Licenciatura en Sistemas de Información</h3>
+            <p>Formación en sistemas, tecnología y diseño de experiencias digitales.</p>
+            <ul><li>Integración de pensamiento lógico y resolución de problemas.</li><li>Aplicación de principios UX/UI en proyectos web.</li></ul>
+          </article>
+          <article class="timeline-item">
+            <span class="timeline-date">2026 · Proyecto UX/UI</span>
+            <h3>Diseño y desarrollo de portfolio personal</h3>
+            <p>Del prototipo de Figma a una implementación web responsive y accesible.</p>
+            <ul><li>Diseño del prototipo y sistema visual en Figma.</li><li>Maquetación semántica con HTML, CSS y JavaScript vanilla.</li></ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="about" aria-labelledby="about-title">
+      <div class="container about-layout">
+        <div class="about-photo">
+          <img src="assets/gisella-rodriguez.jpg" alt="Retrato de Gisella Rodriguez con una blusa blanca." width="768" height="1364" loading="lazy">
+          <span class="about-sticker">Hola, soy Gisella</span>
+        </div>
+        <div>
+          <p class="eyebrow">04 · Sobre mí</p>
+          <h2 id="about-title">Curiosa por naturaleza,<br><em>diseñadora por elección.</em></h2>
+          <p>Soy estudiante de Sistemas de Información, con interés en el diseño UX/UI y el desarrollo web. Disfruto darle estructura a las ideas, cuidar los detalles y pensar en cómo se siente cada interacción para quien la usa.</p>
+          <p>Me motiva seguir aprendiendo y crear experiencias digitales que sean útiles, cercanas y fáciles de recorrer.</p>
+          <div class="values-grid" aria-label="Principios de trabajo">
+            <article class="value-card"><h3>Claridad</h3><p>Hacer simple lo que importa.</p></article>
+            <article class="value-card"><h3>Empatía</h3><p>Diseñar pensando en personas reales.</p></article>
+            <article class="value-card"><h3>Curiosidad</h3><p>Explorar, probar y aprender siempre.</p></article>
+          </div>
+          <div class="design-proof">
+            <p><strong>Prototipo Figma completado.</strong> El proceso de diseño previo a este desarrollo ya está realizado.</p>
+            <a class="text-link" href="https://www.figma.com/design/Uhq3vH2mVkorierqNs5rHm/Sin-t%C3%ADtulo?node-id=39-15546&amp;m=dev" target="_blank" rel="noopener noreferrer">Ver diseño <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contact" aria-labelledby="contact-title">
+      <div class="container contact-layout">
+        <div>
+          <p class="eyebrow">Contacto</p>
+          <h2 id="contact-title">Hagamos algo<br><em>increíble juntos.</em></h2>
+          <p>Estoy abierta a conversar, compartir ideas y conocer nuevas oportunidades.</p>
+          <div class="social-links" aria-label="Redes sociales">
+            <a href="https://www.linkedin.com/in/gisella-soledad-rodriguez-671bb01b3" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span></a>
+            <a href="https://www.instagram.com/gisella.sol?cplk=a3VicnUxbWc3cHBl&amp;utm_source=qr" target="_blank" rel="noopener noreferrer">Instagram <span aria-hidden="true">↗</span></a>
+            <a href="https://github.com/gisellasolrodriguez-oss" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+        <a class="button" href="mailto:gisellasolrodriguez@gmail.com?subject=Hola%2C%20Gisella">Escribime por email <span aria-hidden="true">↗</span></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <p>© <span id="current-year">2026</span> Gisella Soledad Rodriguez</p>
+        <p class="tech-credit">Diseñado con intención · Desarrollado con HTML, CSS y JavaScript.</p>
+      </div>
+      <nav class="footer-nav" aria-label="Navegación del pie de página">
+        <a href="#inicio">Inicio</a>
+        <a href="#skills">Habilidades</a>
+        <a href="#projects">Proyectos</a>
+        <a href="#about">Sobre mí</a>
+        <a href="#contact">Contacto</a>
+        <a href="https://www.linkedin.com/in/gisella-soledad-rodriguez-671bb01b3" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="https://www.instagram.com/gisella.sol?cplk=a3VicnUxbWc3cHBl&amp;utm_source=qr" target="_blank" rel="noopener noreferrer">Instagram</a>
+        <a href="https://github.com/gisellasolrodriguez-oss" target="_blank" rel="noopener noreferrer">GitHub</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="js/portfolio.js" defer></script>
+</body>
+</html>
